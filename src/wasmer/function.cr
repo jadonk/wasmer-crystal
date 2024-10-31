@@ -120,7 +120,7 @@ module Wasmer
       host = HostFunc.new(store, func, env)
       @env = FuncEnv.new(@@func_store.store(host))
       @ptr = LibWasmer.wasm_func_new_with_env(store, type,
-        ->Function.trampoline, Box(FuncEnv).box(@env), ->Function.env_finalizer)
+        ->Function.trampoline, Box(FuncEnv).box(@env.not_nil!), ->Function.env_finalizer)
     end
 
     # :nodoc:
