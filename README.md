@@ -50,7 +50,7 @@ it's the best place for a complete introduction!
 <br/>
 
 > **_NOTE:_** 
-Shard assumes you have [wasmer](https://github.com/wasmerio/wasmer) runtime installed and environment variable **`WASMER_DIR`** is setup properly, or you will encounter issues during compilation.
+Shard assumes you have [wasmer](https://github.com/wasmerio/wasmer) runtime version 2.XX installed and environment variable **`WASMER_DIR`** is setup properly, or you will encounter issues during compilation.
 
 <br/>
 
